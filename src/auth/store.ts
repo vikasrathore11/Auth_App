@@ -60,11 +60,9 @@ const useAuth = create<AuthState>()(
           });
         }
       },
-      logout: async (silent = false) => {
+      logout: async () => {
         try {
-          //   if (!silent) {
-          //     await logoutUser();
-          //   }
+         
           set({
             authLoading: true,
           });

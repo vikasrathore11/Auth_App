@@ -1,7 +1,6 @@
 import useAuth from "@/auth/store";
 import { refreshToken } from "@/components/services/AuthService";
 import { Spinner } from "@/components/ui/spinner";
-import { tr } from "date-fns/locale";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router";

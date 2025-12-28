@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Github, Mail, Lock, User, CheckCircle2Icon } from "lucide-react"
+import { Mail, Lock, User, CheckCircle2Icon } from "lucide-react"
 import { motion } from "framer-motion"
 import { useState, type FormEvent } from "react"
 import toast from "react-hot-toast"
@@ -53,8 +53,7 @@ export default function SignupPage() {
 
     //form submission API call
     try {
-        const result =  await registerUser(data)
-      
+         await registerUser(data)
       toast.success("Account created successfully! Please login.")
       setData({ name: "", email: "", password: "" });
       navigate("/login");                                     
