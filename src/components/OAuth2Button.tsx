@@ -8,7 +8,7 @@ function OAuth2Button() {
         <div className="grid grid-cols-2 gap-4" >
 
             <NavLink
-                to={`${import.meta.env.VITE_BASE_URL || "http://localhost:8082"}/oauth2/authorization/google`}
+                to={`${import.meta.env.VITE_BASE_URL || "https://auth-app-backend-1-0.onrender.com"}/oauth2/authorization/google`}
                 className="block"
             >
                 <Button
@@ -25,7 +25,7 @@ function OAuth2Button() {
 
             </NavLink >
             <NavLink
-                to={`${import.meta.env.VITE_BASE_URL || "http://localhost:8082"}/oauth2/authorization/github`}
+                to={`${import.meta.env.VITE_BASE_URL || "https://auth-app-backend-1-0.onrender.com"}/oauth2/authorization/github`}
                 className="block"
             >
                 <Button
